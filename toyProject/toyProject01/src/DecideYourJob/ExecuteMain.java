@@ -9,7 +9,7 @@ public class ExecuteMain {
 	public static void main(String[] args) {
 		User warrior = new Player(11, 123, "Player1");
 		warrior.setJob(new Warrior());
-		warrior.performWeapon(new Wand());
+		warrior.performWeapon(new LaiserKnife());
 		warrior.performDisplay();
 		warrior.performJob();
 		//warrior.performWeapon();

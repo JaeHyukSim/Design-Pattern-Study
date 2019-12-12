@@ -14,7 +14,8 @@ public class Warrior implements Job{
 	}
 	
 	public void weapon(Weapon weapon) {
-		if(weapon.getId().equals("Knife") || weapon.getId().equals("Ax")) {
+		if(weapon.getId().equals("Knife") || weapon.getId().equals("Ax")
+			|| weapon.getId().equals("LaiserKnife")){
 			weapon.weapon();
 		} else {
 			weapon = new WeaponNoWay();
