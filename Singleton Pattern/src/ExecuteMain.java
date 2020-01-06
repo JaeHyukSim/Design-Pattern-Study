@@ -11,6 +11,14 @@ public class ExecuteMain {
 		SingletonPattern sp3 = SingletonPattern.getInstance();
 		//sp3.getInstance();
 		System.out.println(sp3.getData());
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
+		sp3 = SingletonPattern.getInstance();
 	}
 
 }

@@ -5,6 +5,7 @@ public class SingletonPattern {
 	private int data;
 	
 	private SingletonPattern() {
+		System.out.println("im»ı¼ºÀÚ");
 		data = 10;
 	};
 	
@@ -18,6 +19,7 @@ public class SingletonPattern {
 		}
 		return instance;
 	}
+	
 	public int getData() {
 		return data;
 	}
