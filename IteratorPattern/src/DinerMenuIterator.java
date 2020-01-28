@@ -1,10 +1,8 @@
 
-import java.util.Iterator;
-
 public class DinerMenuIterator implements Iterator{
 
-	MenuItem[] items;
-	int position = 0;
+	private MenuItem[] items;
+	private int position = 0;
 	
 	public DinerMenuIterator(MenuItem[] items) {
 		this.items = items;
@@ -22,6 +20,11 @@ public class DinerMenuIterator implements Iterator{
 		MenuItem menuItem = items[position];
 		position = position + 1;
 		return menuItem;
+	}
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

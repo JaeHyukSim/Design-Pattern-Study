@@ -1,4 +1,4 @@
 
 public interface Menu {
-	public void createIterator();
+	public Iterator createIterator();
 }
