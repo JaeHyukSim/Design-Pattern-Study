@@ -1,12 +1,19 @@
 
-public class SingletonPattern {
+public class SingletonPattern implements Cloneable{
 	private static volatile SingletonPattern instance = null;
 	
 	private int data;
 	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+
 	private SingletonPattern() {
-		System.out.println("im»ý¼ºÀÚ");
+		System.out.println("imï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		data = 10;
+		
 	};
 	
 	public static SingletonPattern getInstance() {

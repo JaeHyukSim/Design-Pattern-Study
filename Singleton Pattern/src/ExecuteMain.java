@@ -19,6 +19,21 @@ public class ExecuteMain {
 		sp3 = SingletonPattern.getInstance();
 		sp3 = SingletonPattern.getInstance();
 		sp3 = SingletonPattern.getInstance();
+		try {
+			SingletonPattern sp4 = (SingletonPattern)sp3.clone();
+			sp4.setData(20);
+			System.out.println(sp4.getData());
+			System.out.println(sp3.getData());
+			System.out.println(sp.getData());
+			sp.setData(30);
+			System.out.println(sp4.getData());
+			System.out.println(sp3.getData());
+			System.out.println(sp.getData());
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 }
